@@ -9,9 +9,9 @@
     <main>
         <article>
             <form action="#" class="form" method="POST">
-  <input type="text">
-  <button type="submit">Отправить</button>
-</form>
+            <input type="text">
+            <button type="submit">Отправить</button>
+            </form>
         </article>
     </main>
     <script>
@@ -21,7 +21,7 @@
 
         text = encodeURIComponent(text);
 
-        let url = `https://wa.me/${number}`;
+        let url = `https://wa.me/${number}=&text${text}=&data=`;
 
         window.open(url);
         }
