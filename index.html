@@ -21,7 +21,7 @@
 
         text = encodeURIComponent(text);
 
-        let url = `https://wa.me/${number}=&text${text}`;
+        let url = `https://wa.me/${number}/?text${text}`;
 
         window.open(url);
         }
