@@ -9,7 +9,7 @@
     <main>
         <article>
             <form action="#" class="form" method="POST">
-            <input type="text">
+            <input id="textMessages" type="text">
             <button type="submit">Отправить</button>
             </form>
         </article>
@@ -18,10 +18,10 @@
         const form = document.querySelector('.form');
         const number = '+79528885656';
         function sendToWhatsapp(text, phone) {
-
+            let messages=document.querySelector("#textMessages").value;
         text = encodeURIComponent(text);
 
-        let url = `https://wa.me/${number}?text=Здравствуйте`;
+        let url = `https://wa.me/${number}?text=${messages}`;
 
         window.open(url);
         }
